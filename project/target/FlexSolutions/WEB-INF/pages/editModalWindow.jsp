@@ -23,7 +23,7 @@
         color: #323232;
         background-color: #efefef;
     }
-    
+
     .string .data {
         text-align: center;
         width: 25%;
