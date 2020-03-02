@@ -30,7 +30,7 @@ CREATE TABLE `students` (
   `date_of_birth` varchar(30) NOT NULL,
   `faculty` varchar(30) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `students` (
 
 LOCK TABLES `students` WRITE;
 /*!40000 ALTER TABLE `students` DISABLE KEYS */;
-INSERT INTO `students` VALUES (68,'alekseyka','shyshymasss',66,'13/03/2001','KN'),(69,'aleksey','fdvfdv',66,'13/03/2001','KN'),(75,'aleksey','Makeev',66,'13/03/2001','KN');
+INSERT INTO `students` VALUES (68,'alekseyka','shyshymasss',66,'13/03/2001','KN'),(75,'aleksey','Makeev',66,'13/03/2001','KN'),(76,'aleksey','Makeev',55,'13/03/2001','KN'),(77,'Bogdan','Barovskii',18,'17/08/2000','KN'),(78,'Maksim','Makeev',77,'13/07/2001','KN'),(79,'Valera','Sinii',18,'15/03/2001','KN'),(80,'aleksey','Vela',18,'13/03/2001','KN'),(81,'Marsel','Sanchos',18,'13/04/2001','KN'),(82,'Bogdan','shyshymasss',18,'13/03/2001','KN'),(83,'aleksey','shyshyma',18,'13/03/2001','KIT');
 /*!40000 ALTER TABLE `students` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-02 10:28:18
+-- Dump completed on 2020-03-02 10:45:29
