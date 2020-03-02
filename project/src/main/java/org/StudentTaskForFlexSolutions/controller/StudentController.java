@@ -90,7 +90,7 @@ public class StudentController
         Student student = studentService.getStudentById(id);
         model.addAttribute("command", student);
         model.addAttribute("pageId", new Integer(page));
-        return "editEmp";
+        return "editModalWindow";
     }
 
 

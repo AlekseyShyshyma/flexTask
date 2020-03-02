@@ -14,6 +14,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        text-decoration: none;
     }
 
     body
@@ -355,10 +356,10 @@
             </div>
         </div>
         <fieldset>
-            <form:input path="name" placeholder="Name"/>
-            <form:input path="surname" placeholder="Surname"/>
-            <form:input path="age" placeholder="Age"/>
-            <form:input path="dateOfBirth" placeholder="Date of birth in format:DD.MM.YEAR"/>
+            <form:input path="name" placeholder="Name(only eng letters without numbers)"/>
+            <form:input path="surname" placeholder="Surname(only eng letters without numbers)"/>
+            <form:input path="age" placeholder="Age(integer)"/>
+            <form:input path="dateOfBirth" placeholder="Date of birth in format:DD/MM/YEAR"/>
             <form:input path="faculty" placeholder="Department"/>
                 <button type="submit" class="data_button">Add Book</button>
         </fieldset>
@@ -405,24 +406,25 @@
             </c:forEach>
         </div>
 </div>
-<script type="text/javascript">
-    let editButtons = document.getElementsByClassName('data_button-edit');
-    let formTitle = document.getElementsByClassName('form-title')[0];
-    let formTitleEdit = document.getElementsByClassName('form-title')[1];
-    let modalWindow = document.getElementsByClassName('modal-wrapper')[0];
-    let modalWindowEdit = document.getElementsByClassName('modal-wrapper-edit')[0];
-    let addButton = document.getElementsByClassName('data_button-add')[0].onclick = function()
-    {
-        modalWindow.style.display = 'flex';
-        formTitle.innerHTML = "Add Element";
-    }
-
-    for(let i = 0; i < editButtons.length; i++) {
-        editButtons[i].onclick = function () {
-            modalWindowEdit.style.display = "flex";
+    <script type="text/javascript">
+        let editButtons = document.getElementsByClassName('data_button-edit');
+        let formTitle = document.getElementsByClassName('form-title')[0];
+        let modalWindow = document.getElementsByClassName('modal-wrapper')[0];
+        let addButton = document.getElementsByClassName('data_button-add')[0].onclick = function() {
+            modalWindow.style.display = 'flex';
+            formTitle.innerHTML = "Add Element";
         }
-    }
-</script>
+        let closeWindow = document.getElementsByClassName('form-times')[0].onclick = function() {
+            modalWindow.style.display = 'none';
+        }
+
+        for(let i = 0; i < editButtons.length; i++) {
+            editButtons[i].onclick = function() {
+                modalWindow.style.display = 'flex';
+                formTitle.innerHTML = "Edit Element";
+            }
+        }
+    </script>
 </body>
 </html>
 

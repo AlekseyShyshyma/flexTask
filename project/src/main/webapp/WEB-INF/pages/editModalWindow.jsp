@@ -5,7 +5,7 @@
 <%@ page session="false" %>
 <html>
 <head>
-    <title>Sex, drugs, Rock'n'Roll</title>
+    <title>Edit User</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
 </head>
@@ -15,6 +15,7 @@
         margin: 0;
         padding: 0;
     }
+
 
     body {
         font-family: 'Montserrat', sans-serif;
