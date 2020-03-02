@@ -41,7 +41,7 @@
         </property>
     </bean>
 
-    <!--BookDao and BookService beans-->
+    <!--StudentDao and StudentService beans-->
     <bean id="studentDAO" class="org.StudentTaskForFlexSolutions.dao.StudentDAOImplementation">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory"/>
     </bean>

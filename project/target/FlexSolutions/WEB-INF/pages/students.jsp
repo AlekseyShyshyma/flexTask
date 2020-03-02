@@ -361,7 +361,7 @@
             <form:input path="age" placeholder="Age(integer)"/>
             <form:input path="dateOfBirth" placeholder="Date of birth in format:DD/MM/YEAR"/>
             <form:input path="faculty" placeholder="Department"/>
-                <button type="submit" class="data_button">Add Book</button>
+                <button type="submit" class="data_button">Add Student</button>
         </fieldset>
     </form:form>
 </div>
